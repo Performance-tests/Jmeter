@@ -12,7 +12,7 @@
       <stringProp name="TestPlan.user_define_classpath"></stringProp>
     </TestPlan>
     <hashTree>
-      <com.blazemeter.jmeter.threads.concurrency.ConcurrencyThreadGroup guiclass="com.blazemeter.jmeter.threads.concurrency.ConcurrencyThreadGroupGui" testclass="com.blazemeter.jmeter.threads.concurrency.ConcurrencyThreadGroup" testname="Correct page ID" enabled="true">
+      <com.blazemeter.jmeter.threads.concurrency.ConcurrencyThreadGroup guiclass="com.blazemeter.jmeter.threads.concurrency.ConcurrencyThreadGroupGui" testclass="com.blazemeter.jmeter.threads.concurrency.ConcurrencyThreadGroup" testname="Correct page ID" enabled="false">
         <elementProp name="ThreadGroup.main_controller" elementType="com.blazemeter.jmeter.control.VirtualUserController"/>
         <stringProp name="TestPlan.comments">Getting a user data using a correct ID</stringProp>
         <stringProp name="ThreadGroup.on_sample_error">continue</stringProp>
@@ -483,7 +483,7 @@
         <elementProp name="ThreadGroup.main_controller" elementType="com.blazemeter.jmeter.control.VirtualUserController"/>
         <stringProp name="TestPlan.comments">Attempting to get user data using an incorrect ID</stringProp>
         <stringProp name="ThreadGroup.on_sample_error">continue</stringProp>
-        <stringProp name="TargetLevel">${TARGET_CONCURRENCY}</stringProp>
+        <stringProp name="TargetLevel">${TARGET_CONCURRECY}</stringProp>
         <stringProp name="RampUp">${RAMP_UP_TIME}</stringProp>
         <stringProp name="Steps">${RAMP_UP_STEPS_COUNT}</stringProp>
         <stringProp name="Hold">${HOLD_TARGET_RATE_TIME}</stringProp>
@@ -866,7 +866,7 @@
           <hashTree/>
           <BeanShellAssertion guiclass="BeanShellAssertionGui" testclass="BeanShellAssertion" testname="Avg response time assertion" enabled="true">
             <stringProp name="BeanShellAssertion.query"></stringProp>
-            <stringProp name="BeanShellAssertion.filename">C:\Projekty\Testowanie\Performance tests\Reqres\LoadTests\ListUsers\scripts\avgResponseTimeAssertion.bsh</stringProp>
+            <stringProp name="BeanShellAssertion.filename">C:\Projekty\Testowanie\Performance tests\Reqres\commonScripts\avgResponseTimeAssertion.bsh</stringProp>
             <stringProp name="BeanShellAssertion.parameters"></stringProp>
             <boolProp name="BeanShellAssertion.resetInterpreter">false</boolProp>
           </BeanShellAssertion>
@@ -900,7 +900,7 @@
           </elementProp>
           <elementProp name="RAMP_UP_TIME" elementType="Argument">
             <stringProp name="Argument.name">RAMP_UP_TIME</stringProp>
-            <stringProp name="Argument.value">1</stringProp>
+            <stringProp name="Argument.value">7</stringProp>
             <stringProp name="Argument.desc">The ramp up time</stringProp>
             <stringProp name="Argument.metadata">=</stringProp>
           </elementProp>

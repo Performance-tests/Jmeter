@@ -1,0 +1,12 @@
+import com.eclipsesource.json.JsonObject;
+import com.eclipsesource.json.JsonArray;
+
+String responseBody = prev.getResponseDataAsString();
+JsonObject jsonObject = JsonObject.readFrom(responseBody);
+
+if(jsonObject.get("data") != null) { 
+	Failure = false;
+} else {
+	Failure = true;
+	FailureMessage = "The property 'data' does not exist in the JSON response";
+}
