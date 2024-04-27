@@ -1,0 +1,7 @@
+accountNavLink,accountNavUrl
+Dashboard,
+Orders,orders/
+Downloads,downloads/
+Addresses,edit-address/
+Account details,customer-logout/
+Logout,customer-logout/
